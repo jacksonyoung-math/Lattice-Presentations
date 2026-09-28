@@ -1,14 +1,14 @@
 # Lattice-Presentations
-Mathematica notebooks and their output files for the sister lattices described in the accompanying paper.
+This repository contains Mathematica notebooks and their output files for the sister lattices corresponding to the Picard modular groups when d=3, 7, and 11. Two Magma files are given for each group, one with the raw presentation and a simplified version described in the accompanying paper.
 
 # General input information
-To use these notebooks, input the lattice you wish to stabilize using the values d, alpha, beta, and delta. This will only work for 1-cusped lattices. A fundamental domain is needed a priori, with one of the vertices centered at 0. Input the other vertices as lambda and mu, and the height of the prism as nu. The generators R and the vertical/horizontal translations must also be given. This will need to be done for all three notebooks separately.
+To use each of these notebooks, input the lattice you wish to stabilize using the values d, alpha, beta, and delta. Note that this will only work for 1-cusped stabilizer lattices. A fundamental domain for the cusp stabilizer is needed a priori, with one of the vertices centered at 0. This can be found following the methods of Section 4.2 in the paper. Input these vertices as (0, lambda, mu, nu). The generators R and the vertical/horizontal translations must also be given. This will need to be done for all three notebooks separately.
 
 # CoveringDepthFinder.nb
-Given the lattice information, computes the covering depth (spit in the output) as well as the primitive lattice lifts in the fundamental domain of depth n. The output file is called plls.txt.
+Computes the covering depth (output to the console) as well as a file, plls.txt, listing the primitive lattice lifts in the fundamental domain of depth n. Note that this is NOT up to orbit equivalence; this is done in Step 3.
 
 # FindGenerators.nb
-This is a short file that takes as input the previous list of PLLs and returns generators for their Gamma_infty orbits. The file will be called gens.txt. Feel free to play around with these to find more suitable generators, otherwise the default settings should work perfectly fine.
+Takes as input plls.txt and returns generators for their Gamma_infty orbits in the gens.txt file.
 
 # FindRelations.nb
-Takes as input the list of generators and returns as output a MAGMA file containing the presentation. This file will be called pres.m.
+Takes as input gens.txt and returns as output a Magma file pres.m containing the raw presentation. Simplified presentations are then found by loading the file into Magma and running the Simplify command with various settings until a suitably shortened presentation is identified.
