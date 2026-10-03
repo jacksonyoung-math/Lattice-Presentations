@@ -8,7 +8,7 @@ To use each of these notebooks, input the lattice you wish to stabilize using th
 Computes the covering depth (output to the console) as well as a file, plls.txt, listing the primitive lattice lifts in the fundamental domain of depth n. Note that this is NOT up to orbit equivalence; this is done in Step 3.
 
 # FindGenerators.nb
-Takes as input plls.txt and returns generators for their Gamma_infty orbits in the gens.txt file.
+Takes as input plls.txt and returns generators for their Gamma_infty orbits in the gens.txt file. Occasionally, it is advantageous to select nicer generators manually. The README file in each folder will give Wolfram commands to get the precise generators I used, if applicable.
 
 # FindRelations.nb
 Takes as input gens.txt and returns as output a Magma file pres.m containing the raw presentation. Simplified presentations are then found by loading the file into Magma and running the Simplify command with various settings until a suitably shortened presentation is identified.
