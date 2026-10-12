@@ -1,6 +1,7 @@
 # Generators
-The generators given in the gens.txt file are not achieved simply running GeneratorsFinder.nb. The first generator is different. To find it, enter the following command after running the GeneratorsFinder.nb notebook:
+Generators used were the default ones in the output of GeneratorsFinder.nb.
 
-GetGenerator[orbitlist[[1]][[2]], plllist, 0][[4]] // ComplexExpand
+# Presentation
+We used the following Magma command to get this simplification:
 
-This gives a nicer matrix, and results in a much cleaner presentation.
+Simplify(G);
