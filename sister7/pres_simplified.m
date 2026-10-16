@@ -1,22 +1,19 @@
-F<Tv, A1, A4> := FreeGroup(3);
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-Rel0 := A1^4 = F!1;
-Rel1 := A1^-2 * Tv * A1^-2 * Tv^-1 = F!1;
-Rel2 := (Tv * A1)^3 = F!1;
-Rel3 := A1 * Tv^-1 * A1^-1 * Tv^-1 * A1 * Tv^-1 = F!1;
-Rel4 := A4^7 = F!1;
-Rel5 := (Tv * A4^-1)^4 = F!1;
-Rel6 := (Tv * A4^2)^3 = F!1;
-Rel7 := A4^-1 * Tv^-1 * A1 * Tv^-1 * A4^-1 * Tv^-2 * A1 * A4 * Tv = F!1;
-Rel8 := A1^-1 * Tv^2 * A4^-3 * Tv * A4^3 = F!1;
-Rel9 := Tv^-1 * A4 * A1^-1 * Tv^2 * A4^2 * Tv^-1 * A4^-2 = F!1;
-Rel10 := Tv * A4^-3 * A1 * Tv^-1 * A1^-1 * A4^-3 * A1^-1 = F!1;
-Rel11 := Tv * A4^-1 * Tv * A4^-1 * Tv^-1 * A1 * Tv^-1 * A4 * Tv^-1 * A4 * A1^-1 * Tv = F!1;
-Rel12 := Tv^-1 * A1 * A4 * Tv^-1 * A4^-2 * Tv * A4 * A1^-1 * Tv^2 * A4 * A1^-1 * Tv^-1 = F!1;
-Rel13 := Tv^-1 * A1 * A4^-1 * Tv^-3 * A1 * A4 * Tv^-2 * A4^-2 * Tv^-2 = F!1;
-Rel14 := A4^-2 * Tv^-2 * A4^2 * Tv * A4^-1 * Tv^-1 * A1 * Tv^-2 * A1 * Tv^-1 * A4 * Tv^-1 = F!1;
-Rel15 := A4^-2 * Tv^-1 * A4 * Tv^-1 * A4^-1 * Tv^-1 * A1 * A4^-2 * Tv^-2 * A1 * Tv^-1 * A4^3 * Tv^-1 * A1^2 * A4^3 * Tv^-1 * A1 * Tv * A4^3 * Tv^-1 * A4 * Tv^-1 * A4^-2 * A1^-1 * A4 * Tv^-1 * A4 * Tv^-1 * A1^-1 = F!1;
-
-rels := {Rel0, Rel1, Rel2, Rel3, Rel4, Rel5, Rel6, Rel7, Rel8, Rel9, Rel10, Rel11, Rel12, Rel13, Rel14, Rel15};
-
-G := quo<F|rels>;
+\f0\fs24 \cf0 F<Tv, A4> := FreeGroup(2);\
+\
+Rel0 := A4^7 = F!1;\
+Rel1 := (Tv^-1 * A4)^4 = F!1;\
+Rel2 := (A4^-2 * Tv^-1)^3 = F!1;\
+Rel3 := Tv * A4^-2 * Tv^-1 * A4 * Tv^-1 * A4^-2 * Tv * A4^3 * Tv^-1 * A4^3 = F!1;\
+Rel4 := A4^-3 * Tv * A4 * Tv^-1 * A4^-2 * Tv^-2 * A4^-3 * Tv * A4 * Tv * A4^-1 * Tv * A4^2 * Tv^-2 = F!1;\
+Rel5 := A4^-3 * Tv * A4^3 * Tv * A4^-3 * Tv * A4^3 * Tv^-1 * A4^-3 * Tv^-1 * A4^3 * Tv^-1 = F!1;\
+Rel6 := (Tv^-2 * A4^3 * Tv^-1 * A4^-3 * Tv^-1)^3 = F!1;\
+\
+rels := \{Rel0, Rel1, Rel2, Rel3, Rel4, Rel5, Rel6\};\
+G := quo<F|rels>;}
